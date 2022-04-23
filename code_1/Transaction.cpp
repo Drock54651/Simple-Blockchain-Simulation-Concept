@@ -10,19 +10,23 @@ Transaction::Transaction(string _sender, string _receiver, int _amount) {
     amount = _amount;
 }
 
-string Transaction::getSender() {
+string Transaction::getSender() 
+{
     return sender;
 }
 
-string Transaction::getReceiver() {
+string Transaction::getReceiver() 
+{
     return receiver;
 }
 
-int Transaction::getAmount() {
+int Transaction::getAmount() 
+{
     return amount;
 }
 
-string Transaction::toString() {
+string Transaction::toString() 
+{
     stringstream ss;
     ss << "(" << sender <<", " << receiver << ", " << amount << ")";
     return ss.str();

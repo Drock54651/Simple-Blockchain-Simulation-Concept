@@ -17,7 +17,15 @@ public:
     Block(vector<Transaction> _transactions, time_t _timestamp, string _previousHash);
     void setPreviousHash(string hash);
     string calculateHash();
-    void mineBlock(unsigned int nDifficulty);
+    int mineBlock(unsigned int nDifficulty);
+    // vector<Transaction> getTransaction();
+    int traverserTransaction(string name);
+    string getPreviousHash();
+    //int getNonce();
+    time_t getTime();
+    string getHash();
     string toString();
+    void printTransaction();
+    int getNonce();
 };
 

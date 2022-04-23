@@ -20,6 +20,7 @@ class Blockchain {
        bool isChainValid();
        bool minePendingTransactions(string minerAddress);
        int getBalanceOfAddress(string address);
+       int getBalanceOfAddressWithPending(string address);
        void prettyPrint();
 
     private:
